@@ -125,22 +125,26 @@ PRODUCT_COPY_FILES += \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libgemini.so:/system/lib/libgemini.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libhtc_ril.so:/system/lib/libhtc_ril.so \\
     vendor/__MANUFACTURER__/__DEVICE__/proprietary/libmmipl.so:/system/lib/libmmipl.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libmmjpeg.so:/system/lib/libmmjpeg.so \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/default.acdb:/system/firmware/default.acdb \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/default_mfg.acdb:/system/firmware/default_mfg.acdb \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/default_org.acdb:/system/firmware/default_org.acdb \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/default_org_nel.acdb:/system/firmware/default_org_nel.acdb \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/yamato_pfp.fw:/system/firmware/yamato_pfp.fw \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/yamato_pm4.fw:/system/firmware/yamato_pm4.fw \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vidc_720p_command_control.fw:/system/firmware/vidc_720p_command_control.fw \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vidc_720p_h263_dec_mc.fw:/system/firmware/vidc_720p_h263_dec_mc.fw \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vidc_720p_h264_dec_mc.fw:/system/firmware/vidc_720p_h264_dec_mc.fw \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vidc_720p_h264_enc_mc.fw:/system/firmware/vidc_720p_h264_enc_mc.fw.fw \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vidc_720p_mp2_dec_mc.fw:/system/firmware/vidc_720p_mp2_dec_mc.fw \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vidc_720p_mp4_dec_mc.fw:/system/firmware/vidc_720p_mp4_dec_mc.fw \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vidc_720p_mp4_enc_mc.fw:/system/firmware/vidc_720p_mp4_enc_mc.fw \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vidc_720p_vc1_dec_mc.fw:/system/firmware/vidc_720p_vc1_dec_mc.fw \\
-    vendor/__MANUFACTURER__/__DEVICE__/proprietary/bcm4329.hcd:/system/firmware/bcm4329.hcd	
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/libmmjpeg.so:/system/lib/libmmjpeg.so 
+
+# All the firmware for saga
+PRODUCT_COPY_FILES += \\
+
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/default.acdb:/system/etc/firmware/default.acdb \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/default_mfg.acdb:/system/etc/firmware/default_mfg.acdb \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/default_org.acdb:/system/etc/firmware/default_org.acdb \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/default_org_nel.acdb:/system/etc/firmware/default_org_nel.acdb \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/yamato_pfp.fw:/system/etc/firmware/yamato_pfp.fw \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/yamato_pm4.fw:/system/etc/firmware/yamato_pm4.fw \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vidc_720p_command_control.fw:/system/etc/firmware/vidc_720p_command_control.fw \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vidc_720p_h263_dec_mc.fw:/system/etc/firmware/vidc_720p_h263_dec_mc.fw \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vidc_720p_h264_dec_mc.fw:/system/etc/firmware/vidc_720p_h264_dec_mc.fw \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vidc_720p_h264_enc_mc.fw:/system/etc/firmware/vidc_720p_h264_enc_mc.fw.fw \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vidc_720p_mp2_dec_mc.fw:/system/etc/firmware/vidc_720p_mp2_dec_mc.fw \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vidc_720p_mp4_dec_mc.fw:/system/etc/firmware/vidc_720p_mp4_dec_mc.fw \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vidc_720p_mp4_enc_mc.fw:/system/etc/firmware/vidc_720p_mp4_enc_mc.fw \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/vidc_720p_vc1_dec_mc.fw:/system/etc/firmware/vidc_720p_vc1_dec_mc.fw \\
+    vendor/__MANUFACTURER__/__DEVICE__/proprietary/bcm4329.hcd:/system/etc/firmware/bcm4329.hcd	
 EOF
 
 ./setup-makefiles.sh
