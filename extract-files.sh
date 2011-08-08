@@ -44,21 +44,21 @@ adb pull /system/lib/libgsl.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 adb pull /system/lib/libhtc_ril.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 adb pull /system/lib/libmmipl.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 adb pull /system/lib/libmmjpeg.so ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/firmware/default.acdb ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/firmware/default_mfg.acdb ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/firmware/default_org.acdb ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/firmware/default_org_nel.acdb ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/firmware/yamato_pfp.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/firmware/yamato_pm4.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/firmware/vidc_720p_command_control.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/firmware/vidc_720p_h263_dec_mc.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/firmware/vidc_720p_h264_dec_mc.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/firmware/vidc_720p_h264_enc_mc.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/firmware/vidc_720p_mp2_dec_mc.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/firmware/vidc_720p_mp4_dec_mc.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/firmware/vidc_720p_mp4_enc_mc.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/firmware/vidc_720p_vc1_dec_mc.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
-adb pull /system/firmware/bcm4329.hcd ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+adb pull /system/etc/firmware/default.acdb ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+adb pull /system/etc/firmware/default_mfg.acdb ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+adb pull /system/etc/firmware/default_org.acdb ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+adb pull /system/etc/firmware/default_org_nel.acdb ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+adb pull /system/etc/firmware/yamato_pfp.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+adb pull /system/etc/firmware/yamato_pm4.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+adb pull /system/etc/firmware/vidc_720p_command_control.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+adb pull /system/etc/firmware/vidc_720p_h263_dec_mc.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+adb pull /system/etc/firmware/vidc_720p_h264_dec_mc.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+adb pull /system/etc/firmware/vidc_720p_h264_enc_mc.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+adb pull /system/etc/firmware/vidc_720p_mp2_dec_mc.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+adb pull /system/etc/firmware/vidc_720p_mp4_dec_mc.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+adb pull /system/etc/firmware/vidc_720p_mp4_enc_mc.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+adb pull /system/etc/firmware/vidc_720p_vc1_dec_mc.fw ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
+adb pull /system/etc/firmware/bcm4329.hcd ../../../vendor/$MANUFACTURER/$DEVICE/proprietary
 
 (cat << EOF) | sed s/__DEVICE__/$DEVICE/g | sed s/__MANUFACTURER__/$MANUFACTURER/g > ../../../vendor/$MANUFACTURER/$DEVICE/$DEVICE-vendor-blobs.mk
 # Copyright (C) 2010 The Android Open Source Project
